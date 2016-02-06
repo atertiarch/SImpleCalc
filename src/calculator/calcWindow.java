@@ -3,8 +3,10 @@ package calculator;
 import java.awt.*;
 import java.awt.event.*;
 
+@SuppressWarnings("serial")
+
 public class calcWindow extends Frame implements ActionListener	{
-       Button Btn1=new Button("Sum");
+	   Button Btn1=new Button("Sum");
        Button Btn2=new Button("Subtract");
        Button Btn3=new Button("Multiply");
        Button Btn4=new Button("Divide");
@@ -43,13 +45,13 @@ public class calcWindow extends Frame implements ActionListener	{
            Btn3.addActionListener(this);
            Btn4.addActionListener(this);
            
-           addWindowListener(
-           new WindowAdapter() {
-                public void windowClosing(WindowEvent e) {
-                      System.exit(0);
-                      }
+           //exit window
+           addWindowListener(new WindowAdapter() {
+               public void windowClosing(WindowEvent e) {
+              		System.exit(0);
+                    }
            		}
-           );
+        	   );
        }
        
        public void actionPerformed(ActionEvent AE) {
@@ -104,8 +106,8 @@ public class calcWindow extends Frame implements ActionListener	{
         }
         
         public static void main(String args[]){
-        	calcWindow MC=new calcWindow();
-            MC.setVisible(true);
-            MC.setSize(375,250);
+        	calcWindow calcInterface=new calcWindow();
+            calcInterface.setVisible(true);
+            calcInterface.setSize(375,250);
         };
 } 

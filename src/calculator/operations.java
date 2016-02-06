@@ -15,7 +15,12 @@ public class operations {
     }
     
     public static float div(float a,float b){
-    	return(a/b);
+    	try{
+    		return a/b;
+    	} 
+    	catch (Exception e){
+    		return 0;
+    	}
     }
     
     
