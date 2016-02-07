@@ -27,10 +27,13 @@ public class calcWindow extends Frame implements ActionListener	{
            lbl3.setBounds(20,150,75,25);
            add(lbl3);
            txt1.setBounds(150,50,100,25);
+           txt1.setText("0");
            add(txt1);
            txt2.setBounds(150,100,100,25);
+           txt2.setText("0");
            add(txt2);
            txt3.setBounds(150,150,100,25);
+           txt3.setText("0");
            add(txt3);
            Btn1.setBounds(20,200,80,25);
            add(Btn1);
